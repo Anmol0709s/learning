@@ -11,6 +11,11 @@ inheritanceTopic3(inheritanceTopic3 other){
     weight = other.weight;
 
 }
+// @Override
+static void greetings(){
+    System.out.println("hey i m in box class , Greeting!");
+}
+
 inheritanceTopic3(double side , double weight){
     super(side);
     this.weight = weight;

@@ -1,6 +1,6 @@
 package oops;
 
-public class inheritanceTopic4 extends inheritanceTopic3 {
+public class inheritanceTopic4 extends inheritanceTopic3{
     
 
    

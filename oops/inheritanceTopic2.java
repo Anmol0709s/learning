@@ -2,9 +2,9 @@ package oops;
 
 public class inheritanceTopic2 {
     public static void main(String[] args) {
-    //     inheritanceTopic box = new inheritanceTopic(4.6 , 8.0 , 88.7);
-    //     inheritanceTopic box2 = new inheritanceTopic(box);
-    // System.out.println(box2.l + " " + box2.h + " " + box2.w);
+        inheritanceTopic box1 = new inheritanceTopic(4.6 , 8.0 , 88.7);
+        inheritanceTopic box2 = new inheritanceTopic(box1);
+   // System.out.println(box2.l + " " + box2.h + " " + box2.w);
 
     // inheritanceTopic3 box3 = new inheritanceTopic3();
 // inheritanceTopic3 box4 = new inheritanceTopic3(3 , 5 ,8 , 9);
@@ -25,8 +25,12 @@ public class inheritanceTopic2 {
 // inheritanceTopic3 box6 = new inheritanceTopic3(1 , 7 , 6, 5);
 // System.out.println(box6.l);
 
-inheritanceTopic4 box = new inheritanceTopic4( 78 , 4 , 67);
-System.out.println(box.l + " " + box.weight + " " + box.price);
+// inheritanceTopic4 box = new inheritanceTopic4( 78 , 4 , 67);
+// System.out.println(box.l + " " + box.weight + " " + box.price);
 
+// box1.greetings(); 
+
+inheritanceTopic3 box = new inheritanceTopic3();// static methods can be inherited but cannot be overriden
+inheritanceTopic3.greetings();
 }
 }

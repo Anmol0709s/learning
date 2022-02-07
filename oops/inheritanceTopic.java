@@ -1,16 +1,20 @@
 package oops;
 
-
-public class inheritanceTopic {
+//overriding and inheritance both not applicable in instance variable
+public  class inheritanceTopic {
     double l; 
     double h;
     double w;
-    
+   
+    static void greetings(){
+        System.out.println("hey i m in box class , Greeting!");
+    }
 inheritanceTopic () {
     this.l = -1;
     this.h = -1;
     this.w = -1;
 }
+
 //cube
 inheritanceTopic(double side){
 // super();
