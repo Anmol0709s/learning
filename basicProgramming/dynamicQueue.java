@@ -1,9 +1,10 @@
 package basicProgramming;
 
+
 import java.io.*;
 import java.util.*;
 
-public class normalQueue {
+public class dynamicQueue {
 
   public static class CustomQueue {
     int[] data;
@@ -34,7 +35,17 @@ public class normalQueue {
       // write ur code here
 
       if(size == data.length){
-        System.out.println("Queue overflow");
+        // System.out.println("Queue overflow");
+        int[] ndata = new int[2 * data.length];
+        for (int i = 0; i < data.length; i++) {
+            int idx = (front + i) % data.length;
+            ndata[i] = data[idx];
+        }
+        data = ndata;
+        front = 0;
+        int rear = (front + size) % data.length;
+        data[rear] = val;
+        size++;
       } else {
         int rear = (front + size) % data.length;
            data[rear] = val;
